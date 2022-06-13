@@ -15,7 +15,7 @@ const survay = () => {
   }
 
   const next = () => {
-    router.push('/mainservice')
+    router.push('/map')
   }
 
 

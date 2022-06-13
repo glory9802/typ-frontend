@@ -1,5 +1,5 @@
 import React from 'react'
-import fly from '../../image/fly.jpg';
+import fly from '../../public/image/fly.jpg';
 import styles from './Main.module.css';
 import { useRouter } from 'next/router';
 
@@ -11,6 +11,8 @@ const Main = () => {
   }
 
   return (
+    <div className={styles['wrapper']}>
+    <div className={styles['main-container']}>
     <div className={styles['main-1']}>
       <h2 className={styles['main-2']}>
         <b>키워드로 추천하는 여행 경로</b>
@@ -21,10 +23,13 @@ const Main = () => {
       <div>
         <button onClick={survay} className={styles['main-5']}>시작하기</button>
       </div>
-      <div>
-        <img src={fly} alt='이미지테스트' />
+      </div>
+      <div className={styles['main-6']}>
+        <img className={styles['image']} src={'/image/fly.jpg'} alt='이미지테스트' />
       </div>
     </div>
+    </div>
+
   )
 }
 
