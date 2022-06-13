@@ -1,0 +1,30 @@
+.main-1 {
+    padding: 60px;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+
+
+}
+
+.main-2 {
+    font-size: 22.4px;
+    margin: 0px 0px 20px;
+
+}
+
+.main-3 {
+    font-size: 80px;
+}
+
+
+
+.main-5 {
+    margin: 24px 10px;
+    font-size: 30px;
+    color: black;
+    background-color: aqua;
+    justify-content: center;
+    cursor: pointer;
+    
+}

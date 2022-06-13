@@ -1,0 +1,29 @@
+.survay-detail{
+    
+    margin-left: 40px;
+}
+
+.survay{
+    width: auto;
+}
+
+.icon-container {
+    background-color: aqua;
+    width:100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon-pre{
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon-next{
+    display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
