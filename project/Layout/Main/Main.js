@@ -21,9 +21,6 @@ const Main = () => {
       <div>
         <button onClick={survay} className={styles['main-5']}>시작하기</button>
       </div>
-      <div>
-        <img src={fly} alt='이미지테스트' />
-      </div>
     </div>
   )
 }
