@@ -1,9 +1,10 @@
+/* global kakao */
 import React from 'react'
-import Mainservice from '../component/mainservice.js/Mainservice'
+import Map from '../component/Map.js/Map'
 
 const mainservice = () => {
   return (
-    <Mainservice/>
+    <Map />
   )
 }
 
