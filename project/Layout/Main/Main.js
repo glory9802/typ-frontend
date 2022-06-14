@@ -1,5 +1,4 @@
 import React from 'react'
-import fly from '../../public/image/fly.jpg';
 import styles from './Main.module.css';
 import { useRouter } from 'next/router';
 
