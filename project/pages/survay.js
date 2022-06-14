@@ -24,9 +24,7 @@ const survay = () => {
       <Header />
       <div className={styles['survay-detail']}>
         <h2>TYP 설문조사 입니다</h2>
-        <h7>해당 설문조사는 고객님의 여행 선호도와 형태를 분석하기 위함 입니다.
-        </h7>
-        
+        <h7>해당 설문조사는 고객님의 여행 선호도와 형태를 분석하기 위함 입니다.</h7>
       </div>
       <div className={styles['survay']}>
       <First />

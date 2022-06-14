@@ -23,10 +23,13 @@ const Main = () => {
       <div>
         <button onClick={survay} className={styles['main-5']}>시작하기</button>
       </div>
+<<<<<<< HEAD
       </div>
       <div className={styles['main-6']}>
         <img className={styles['image']} src={'/image/fly.jpg'} alt='이미지테스트' />
       </div>
+=======
+>>>>>>> 0ff29ae88fa122f175d44c9229bae70041eeea68
     </div>
     </div>
 
