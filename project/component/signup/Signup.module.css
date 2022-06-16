@@ -31,17 +31,20 @@
 }
 
 .signup-input-birth{
-    display: block;
-    position: relative;
-    width: 200px;
-    height: 51px;
-    border: solid 1px #dadada;
+    display:flex;
+    /* margin: 0px 10px 8px 10px; */
     padding: 10px;
+    border: solid 1px #dadada;
     background: #fff;
-    box-sizing: border-box;
-    float: left;
-    margin-bottom: 30px;
+    cursor: pointer;
+    width: 600px;
 }
+
+
+.signup-input-birth1{
+    width: 600px;
+}
+
 /*회원가입버튼박스*/
 .signup-btn-wrap{
     height: 52px;

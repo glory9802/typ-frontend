@@ -2,6 +2,11 @@ import React from 'react'
 import styles from './Second.module.css'
 
 const Second = () => {
+  
+
+
+
+
     // 여러개 체크해야 되는 것은 type를 check box로 함
   return (
     <>

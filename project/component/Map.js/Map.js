@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 const Map = () => {
-
   const [mapLoaded, setMapLoaded] = useState(false);
 
   useEffect(() => {

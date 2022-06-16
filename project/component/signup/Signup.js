@@ -1,7 +1,59 @@
-import React from 'react'
+import { useRouter } from 'next/router';
+import React, { useState } from 'react'
+import { postSignUpAPI } from '../../lib/api/signup';
 import styles from './Signup.module.css'
 
 const Signup = () => {
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
+	const [name, setName] = useState('');
+	const [birthDate, setBirthDate] = useState('');
+	const [gender, setGender] = useState('');
+	const [phoneNum, setPhoneNum] = useState('');
+
+	const router = useRouter();
+
+	const emailChangeHandler = (event) => {
+		setEmail(event.target.value);
+	  };
+
+	  const passwordChangeHandler = (event) => {
+		setPassword(event.target.value);
+	  };
+
+	  const nameChangeHandler = (event) => {
+		setName(event.target.value);
+	  };
+
+	  const birthDateChangeHandler = (event) => {
+		setBirthDate(event.target.value);
+	  };
+
+	  const genderChangeHandler = (event) => {
+		setGender(event.target.value);
+	  };
+
+	  const phoneNumChangeHandler = (event) => {
+		setPhoneNum(event.target.value);
+	  };
+	
+
+	const signup = () => {
+		const data = {
+			email: email,
+			password: password,
+			name : name,
+			birthDate: birthDate,
+			gender: gender,
+			phoneNum: phoneNum,
+		}
+
+		postSignUpAPI(data);
+
+		router.replace('/');
+	}
+
+	
 	return (
 		
 		<section className={styles[ "signup-wrap" ]} >
@@ -12,45 +64,25 @@ const Signup = () => {
 			<div >
 				<h3 className={styles[ "h3" ]}>이메일</h3>
 				<span className={styles["signup-span"]}>
-					<input className={styles["signup-input"]} id="signup-id" type="text" placeholder="이메일을 입력해주세요"></input>
+					<input onChange={emailChangeHandler} className={styles["signup-input"]} id="signup-id" type="text" placeholder="이메일을 입력해주세요" value={email}></input>
 				</span>
 
 				<h3 className={styles[ "h3" ]}>비밀번호</h3>
 				<span className={styles["signup-span"]}>
-					<input className={styles["signup-input"]} id="signup-pw" type="text" placeholder="비밀번호를 입력해주세요"></input>
+					<input onChange={passwordChangeHandler} value={password} className={styles["signup-input"]} id="signup-pw" type="text" placeholder="비밀번호를 입력해주세요"></input>
 				</span>
 			</div>
 
 			<div>
 				<h3 className={styles[ "h3" ]}>이름</h3>
 				<span className={styles["signup-span"]}>
-					<input className={styles["signup-input"]} id="signup-name" type="text"></input>
+					<input onChange={nameChangeHandler} value={name} className={styles["signup-input"]} id="signup-name" type="text"></input>
 				</span>
 
 				<h3 className={styles[ "h3" ]}>생년월일</h3>
 				<span>
 					<span className={styles["signup-input-birth"]}>
-						<input id="signup-birth-yy" type="text" placeholder="년(4자)"></input>
-					</span>
-					<span className={styles["signup-input-birth" ]} >
-						<select id="signup-birth-mm" className={styles["selectbox" ]} name="month" >
-							<option value="month">월</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-						</select>
-					</span>
-					<span className={styles["signup-input-birth"]} >
-						<input id="signup-birth-dd" type="text" placeholder="일"></input>
+						<input className={styles["signup-input-birth1"]} onChange={birthDateChangeHandler} value={birthDate} id="signup-birth-yy" type="text" placeholder="ex)2010-10-10"></input>
 					</span>
 				</span>
 
@@ -58,8 +90,8 @@ const Signup = () => {
 				<span className={styles["signup-span"]}>
 					<select id="signup-gender" className={styles["selectbox" ]} name="gender" >
 						<option value="gender">성별</option>
-						<option value="man">남자</option>
-						<option value="woman">여자</option>
+						<option value={gender} onChange={genderChangeHandler} >남자</option>
+						<option value={gender} onChange={genderChangeHandler} >여자</option>
 						<option value="no">선택 안함</option>
 					</select>
 				</span>
@@ -69,14 +101,15 @@ const Signup = () => {
 				<h3 className={styles[ "h3" ]}>휴대전화</h3>
 				<div >
 					<span className={styles["signup-span" ]} >
-						<input className={styles["signup-input"]} id="signup-phone" type="text" placeholder="전화번호 입력"></input>
+						<input className={styles["signup-input"]} id="signup-phone" type="text" value={phoneNum} onChange={phoneNumChangeHandler} placeholder="전화번호 입력"></input>
 					</span>
 				</div>
+				
 			</div>
 
 			<div>
 				<div className={styles["signup-btn-wrap"]}>
-					<button className={styles["signup-btn"]} id="signup-btn">가입하기</button>
+					<button className={styles["signup-btn"]} type="submit" onClick={signup} id="signup-btn">가입하기</button>
 				</div>
 			</div>
 		</section>
