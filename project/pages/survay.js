@@ -1,11 +1,10 @@
 import React from 'react'
-import First from './survay/first'
-import Second from './survay/Second'
 import PreIcon from '../public/static/svg/pre.svg'
 import NextIcon from '../public/static/svg/next.svg'
 import Header from '../Layout/Header/Header'
 import styles from './survay.module.css'
 import { useRouter } from 'next/router'
+import Survay from '../component/survay/Survay'
 
 const survay = () => {
   const router = useRouter();
@@ -29,8 +28,7 @@ const survay = () => {
         
       </div>
       <div className={styles['survay']}>
-      <First />
-      <Second />
+      <Survay/>
       
       </div>
       <div className={styles['icon-container']}>

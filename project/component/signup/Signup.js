@@ -112,6 +112,7 @@ const Signup = () => {
 					<button className={styles["signup-btn"]} type="submit" onClick={signup} id="signup-btn">가입하기</button>
 				</div>
 			</div>
+			
 		</section>
 
 	)

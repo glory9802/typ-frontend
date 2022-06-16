@@ -26,10 +26,10 @@ const First = () => {
 
             <div className={styles['survay-container']}>
                 <span className={styles['survay-span']}>먹는건?</span>
-                <label className={styles['survay-label']}><input type="radio" name="survay3" value="5만원 이상" /><span>5만원 이상</span></label>
-                <label className={styles['survay-label']}><input type="radio" name="survay3" value="3만원~5만원" /><span>3만원~5만원</span></label>
-                <label className={styles['survay-label']}><input type="radio" name="survay3" value="1만원~3만원" /><span>1만원~3만원</span></label>
-                <label className={styles['survay-label']}><input type="radio" name="survay3" value="1만원" /><span>1만원</span></label>
+                <label className={styles['survay-label']}><input type="radio" name="survay3" value="5만원 이상" /><span>1만원</span></label>
+                <label className={styles['survay-label']}><input type="radio" name="survay3" value="3만원~5만원" /><span>1만원~3만원</span></label>
+                <label className={styles['survay-label']}><input type="radio" name="survay3" value="1만원~3만원" /><span>3만원~5만원</span></label>
+                <label className={styles['survay-label']}><input type="radio" name="survay3" value="1만원" /><span>5만원 이상</span></label>
             </div>
         </>
     )

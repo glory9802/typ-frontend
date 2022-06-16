@@ -1,8 +1,7 @@
-
 import baseURL from '.';
 
 //POST 카테고리 등록 API
-export const postKeywordAPI = (data) => fetch(`${baseURL}/keyword`, {
+export const postKeywordAPI = (data) => fetch(`${baseURL}/keyword/6`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
