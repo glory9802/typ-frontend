@@ -18,7 +18,7 @@ const MapStatus = () => {
     <>
       <div className={styles['main']}>
         <div>
-          <h2>종로구</h2>
+          <h2>광진구</h2>
         </div>
         <div className={styles['icon-cart']} onClick={cart}>
           <Cart />

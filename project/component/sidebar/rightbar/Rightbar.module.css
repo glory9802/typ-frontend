@@ -37,13 +37,10 @@
     
 }
 
-.divli-container{
-   
 
-}
 
 .li{
-   border: 1px solid black;
+    
     height: 100px;
     margin-bottom: 10px;
 }
@@ -82,4 +79,10 @@
 
 .input1 {
     position: absolute; bottom: 0px; right: 0px; 
+}
+
+.image{
+    width: 230px;
+    height: 100px;
+    float: right;
 }
