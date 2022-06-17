@@ -220,7 +220,9 @@
 <br/>
 <br/>
 
+![start-map](https://user-images.githubusercontent.com/99165620/174206456-93b8abe3-b570-44c1-93a1-190f75d9b033.gif)
 
+![map - mainservice](https://user-images.githubusercontent.com/99165620/174206512-6e74cfd7-6bd4-41ca-aa99-25fb69247a94.gif)
 
 
 ### (보류) 장바구니 페이지
