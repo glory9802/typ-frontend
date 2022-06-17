@@ -1,6 +1,6 @@
 # **TYP (Take Your Pick)**
 <br/>
-🙌
+
 ## **0. 팀원 소개**
 #
 ### [ FrontEnd ]
